@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Sir Tim Berners-Lee</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!--<nav> is a tag which is used to wrap all the menu items inside it.-->
+    <nav class="navbar-inverse my_nav_bar">
+        <!--navbar-inverse. It is a bootstrap css property. We are using it by
+calling it inside the class of the element. It is used to give the
+background-color and font color to the menu bar. We will add style to my_nav_bar-->
+        <div class="navbar-header">
+            <!--navbar-header. It’s a bootstrap css property called inside the class of the element
+navbar-header is mostly an architectural class.It
+allocates approximately 150px to the left of the navbar to wrap the navbar-brand.
+But the most useful property of the navbar-header is its responsiveness to 100%
+width till 768px (tablet views). It also helps to get the menu item on the left hand
+side.-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <!--navbar-toggle: It is a bootstrap css property and we are using it by calling
+it inside the class of the element. it helps to show the
+button only in tablets and in mobiles when the screen resolution is
+less than 768px horizontally.-->
+                <!--data-toggle="collapse" tells the button that there is something that will be
+opening when the button is clicked.-->
+                <!--data-target="#myNavbar" tells the button that when the button is clicked,
+the div with the id = myNavbar should open.-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <!--Inside the button there is a span with class icon-bar. This is also a
+bootstrap css property and we are using it by calling it inside the class of
+the element.
+This we use to get these three lines-->
+            </button>
+            <a class="navbar-brand" href="#">Perter Parker</a>
+            <!--navbar-brand : This again is a bootstrap css property used to give font color,
+height, margin, font-size and padding to the name of our website-->
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!--Div - This is used to hold all the menu items.
+collapse : Another bootstrap css property. This property asks the div to hide all the
+items when the screen resolution is in tablet or mobile zone (less than
+768px horizontally).-->
+            <!--navbar-collapse - bootstrap css property. It adds background color, and shows the big
+menu when the screen size is above 768px. And hides when screen is below 768px. It is the whole and soul for the style
+and display of the menu items.-->
+            <!--id="myNavbar" is the identification of the div, that opens this div when the
+element that has data-target="#myNavbar" is clicked. Currently that
+element is the button.-->
+            <ul class="nav navbar-nav">
+                <!--nav, navbar-nav: It’s a bootstrap css property; used to align and style the list items. -->
+                <li><a href="#achievements">achievements</a></li>
+                <li><a href="#campus_life">campus</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#aboutMe">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container">
+        <h2 class="page-header" id="travel">places must visit</h2>
+        <center>
+            <div class="travel_mainDiv">
+                <img src="trave1.jpeg">
+                <h2 class="text-capitalize"><kbd>prithvi cafe</kbd></h2>
+
+                <hr>
+
+                <h5 class="text-success text-capitalize">I had visited in 2018</h5>
+                <p class="text-muted">Quaint little restaurant tucked inside a by-lane of Juhu. Blink and you will miss
+                    the
+                    entrance to the cafe. So be alert enough to spot the black signboard that says "Prithvi cafe" while
+                    you
+                    are on the main road. The restaurant has a reasonably good menu at reasonable prices. The food is
+                    delicious,
+                    the servings are quite large and some dishes can be shared by 2 people. Attracts quite a trendy
+                    crowd of aspiring celebrities on show days. Be sure to book in advance to avoid disappointments.
+                    On other days, the crowd there is pretty hep & happening. Hosts the famous "Prithvi theater fest",
+                    which you must attend if possible.</p>
+            </div>
+        </center>
+        <br><br>
+        <center>
+            <div class="travel_mainDiv">
+                <img src="travel2.jpeg">
+                <h2 class="text-capitalize"><kbd>jantar mantar - jaipur</kbd></h2>
+
+                <hr>
+
+                <h5 class="text-success text-capitalize">i had visited in feb 2019</h5>
+                <p class="text-muted">It is a wonderful place. Must visit this place. Hiring a tour guide will be better
+                    to understand the stories of such a historical place. It is a beautifully maintained small complex
+                    with yellow painted walls. It is a historical site and famous among tourists. It contains a number
+                    of different devices that were used to measure time in different eras in the Indian history. It has
+                    a nominal ticket price of ₹15 for Indians but about ₹225-250 for foreigners. Nice place to visit. We
+                    had an incredible experience visiting this observatory and seeing the accuracy of the astronomical
+                    instruments built around 300 years ago.</p>
+            </div>
+        </center>
+
+        <h2 class="page-header" id="achievements"> School Achievements</h2>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#School_achievement1">
+            inter-school debate on Environment pollution<i class="fa fa-sort-desc"></i>
+
+        </div>
+        <div id="School_achievement1" class="collapse">
+            <div class="achievement_text">
+                <img src="se1.jpg" class="img-responsive img-thumbnail">
+                <h5 class="text-success text-capitalize"> excellent film to culminate MCU ride
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+
+                </h5>
+                <p>Write About this achievement</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#School_achievement2">
+            inter-school football competition<i class="fa fa-sort-desc"></i>
+
+        </div>
+        <div id="School_achievement2" class="collapse">
+            <div class="achievement_text">
+                <img src="sm2.jpg" class="img-responsive img-thumbnail">
+                <h5 class="text-success text-capitalize"> came second in inter school football competition
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+
+                </h5>
+                <p>Write About this achievement</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#School_achievement3">
+            inter-school science project competition<i class="fa fa-sort-desc"></i>
+
+        </div>
+        <div id="School_achievement3" class="collapse">
+            <div class="achievement_text">
+                <img src="sm3.jpg" class="img-responsive img-thumbnail">
+                <h5 class="text-success text-capitalize"> won second prize in inter school science project competition
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+
+                </h5>
+                <p>Write About this achievement</p>
+
+            </div>
+
+
+        </div>
+
+
+        <h2 class="page-header" id="New">What's New</h2>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4> New School canteen</h4>
+                <img src="canteen.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item col-lg-7 col-md-7 col-sm-7 col-xs-12"> The food options and responsibilities
+                    to consider, canteens must be better organised and more effeciant than they have been in the past.
+                    Online menus with photographs of meals prepared, and detailed descriptions of their ingredients help
+                    both students and parents make the right nutrtional choices. Each student or staff member who
+                    accesses the canteencould be provided with a school canteen acount on the school website that keeps
+                    track of their previous meal choices and any dietry requirment they may have ordering online by
+                    ticking a box and paying for meals online can eliminate the fuss of money handling, making it safer
+                    and less complicated for staff and students alike . Here again, divercity is the key .  </p>
+
+            </li>
+        </ul>
+
+        <li  class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">></li>
+        <h4>implemted Online Attendence Management System</h4>
+        <img src="attendance.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="list-group-item col-lg-7 col-md-7 col-sm-7 col-xs-12">
+             </p>
+
+             <section id="contact">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.723042455704!2d72.84805757567739!3d19.250898446457665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b11d9246ba03%3A0x72cd8d78df7b5945!2sVIBGYOR%20High%2C%20Borivali%20%7C%20CBSE%20%26%20CISCE%20School!5e0!3m2!1sen!2sin!4v1703070968639!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr>
+                <img src="kid.jpeg" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                <h3>Kyra alan Mendes</h3>
+                <div class="contact_1">
+                    <a href="mailto:kyralanmendes@gmail.com?subjet=Hi"></a>
+                    <h5><i class="fa fa-envolop"></i> &nbsp;&nbsp; email me </h5></a>
+
+                    <a href="#"></a>
+                    <h5><i class="fa fa-instagram"></i> &nbsp;&nbsp; instragram me </h5></a>
+
+    </div>
+
+</body>
+
+</html>
